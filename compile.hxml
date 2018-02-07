@@ -1,0 +1,4 @@
+-main Main
+-lib modular
+-cp Source
+-js out/main-javascript.js
