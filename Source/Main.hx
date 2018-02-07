@@ -12,8 +12,11 @@ class Main {
       trace(_ + " loaded");
       var castingModule = new CastingModule();
 
-      // All of these fail
+      // succeed
+      castingModule.dynamicToString();
       castingModule.stdDynamicToInt();
+
+      // fail
       castingModule.intToInt();
       castingModule.dynamicToBool();
       castingModule.dynamicToFloat();
@@ -23,8 +26,10 @@ class Main {
     #else
     trace("no_modular specified, using non-modular CastingModule");
     var castingModule = new CastingModule();
+
+    // succeed
+    castingModule.dynamicToString();
     castingModule.stdDynamicToInt();
-    castingModule.intToInt();
     castingModule.dynamicToBool();
     castingModule.dynamicToFloat();
     castingModule.dynamicToInt();

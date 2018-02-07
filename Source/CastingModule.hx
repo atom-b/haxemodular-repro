@@ -44,4 +44,11 @@ class CastingModule {
         var result = Std.int(dynamicInt);
         trace("result: " + result);
     }
+
+    public function dynamicToString() {
+        trace("dynamic to string...");
+        var dynamicString:Dynamic = "castme";
+        var result = cast(dynamicString, String);
+        trace("result: " + result);
+    }
 }
