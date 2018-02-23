@@ -1,7 +1,7 @@
 (function ($hx_exports, $global) { "use-strict";
 var $s = $global.$hx_scope;
 var require = (function(r){ return function require(m) { return r[m]; } })($s.__registry__);
-var js_Boot = $s.js_Boot, Std = $s.Std;
+var js_Boot = $s.js_Boot, Int = $s.Int, Bool = $s.Bool, Float = $s.Float;
 var CastingModule = function() {
 };
 CastingModule.__name__ = true;
